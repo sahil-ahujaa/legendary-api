@@ -57,7 +57,7 @@ app.route('/api/v1/:tokenKey/validate')
                 }, function(err, successStatus) {
                     if (err)
                         res.send({
-                            status: "Error"
+                            status: "error"
                         });
                     else{
                     	if(successStatus!=null)
@@ -66,7 +66,7 @@ app.route('/api/v1/:tokenKey/validate')
                         });
                         else
                         	res.send({
-                            status: "failed"
+                            status: "failure"
                         });
                     }
                 });
